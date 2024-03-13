@@ -1,0 +1,317 @@
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    color: #fff;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: block;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a{
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.menu a:hover{
+    background: rgba(255, 0, 0, .5);
+}
+
+#menu-bar:checked ～ .menu{
+    transform: translateX(0%);
+}
+
+@media (min-width: 1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+
+    .menu a{
+        border: none;
+    }
+
+    header label{
+        display: none;
+    }
+}
+
+.resena{
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    background: rgb(141, 187, 255);
+}
+
+
+footer {
+    background: rgb(112, 107, 107);
+    padding: 60px 0 30px 0;
+    margin: auto;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: white;
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #fff;
+}
+
+.mision{
+    text-align: center;
+    background-color: rgb(255, 111, 111);
+    height: 50vh;
+    margin-top: 0vh;
+}
+
+.mision a{
+    display: flex;
+    
+    width: 45%;
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+    margin-top: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    border: 0.2em solid black;
+    font-size: 1em;
+    justify-content: center;
+}
+
+.mision a:hover{
+    background:black;
+    color: gray;
+}
+    
+    /* Creación de Columnas */
+.blancoC{
+    display: flex; /*El elemento se comporta como un
+    elemento de
+    bloque*/
+    flex-direction: row; /*Establece como colocar los objetos en
+    el contenedos
+    flexible, en este caso esta deficinido
+    en la dreccion del texto*/
+    flex-wrap: wrap; /* especifica si los elementos hijos son
+    obligados a
+    permanecer en la misma linea*/
+}
+    /* Indica lo que medira de ancho cada columna */
+.blancoC > div{
+    width: 50%; /* En el ejemplo son 2, asi que de divide en 50%*/
+}
+    /* Slider */
+.frame-slider{
+    width: 35vh;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+    
+    margin-bottom: 2em;
+    overflow: hidden; /*Indica la visualizacion del
+    contenido cuando
+    se hace mas pequeña la vista en
+    este
+    caso el contenido es recortado
+    y no se muestran
+    barras de posicion*/
+    border: 6px solid;
+    border-color:black;
+    
+}
+
+.frame-slider .contenedor{
+    display: flex;
+    justify-content: center; /*define como el navegador
+    distribuye el espacio
+    entre y alrededor de los items
+    flex, a lo largo
+    
+    del eje principal de su
+    
+    contenedor*/
+    flex-wrap: wrap;
+}
+
+.frame-slider ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    height: 100%;
+    animation: slide 5s infinite alternate; /*animacion en el cual
+    podemos definir
+    duracion, ritmo etc, en
+    este caso con una
+    duracion de 5s y
+    alternadamente n veces*/
+}
+    
+.frame-slider li{
+    list-style: none;
+    width: 100%;
+}
+    
+.frame-slider img{
+    height: 100%;
+    width: 100%;
+}
+    
+    /*Definen los fotogramas de la secuencia de animacion
+    se estable un inicio y un fin para cada animacion estos se miden en % y van de 0
+    a 100*/
+@keyframes slide{
+    /* imagen1 */
+    0%{margin-left: 0%;} /*inicio*/
+    30%{margin-left: 0%;} /*fin*/
+    /* imagen2 */
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+    /* imagen3 */
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+.vision{
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: white;
+    height: 50vh;
+    justify-content: center;
+    }
+    
+.vision a{
+    display: flex;
+    width: 45%;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    border: 0.2em solid white;
+    font-size: 1em;
+    justify-content: center;
+}
+
+.negro a:hover{
+    background:white;
+    color: black;
+}
+
+.pt-5{
+    margin-top: 17vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.parrafomision{
+    margin-top: 10vh;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.baner{
+    background-image: url(fondo.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+
+}
+
+.slogan{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-style: italic;
+    padding-top: 10vh;
+    color: black;
+    font: bold;
+}
+
+.iconosuperprime{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 1px;
+}
+
+.logom{
+    height: 35px;
+    margin-top: 5px;
+    width: 35px;
+}
+
+.tit{
+    margin: 5px;
+}
