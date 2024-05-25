@@ -1,0 +1,30 @@
+main {
+    padding: 20px 0 0;
+  }
+
+  .signup__container {
+    min-width: 400px;
+    max-width: 35%;
+    padding: 40px 60px 70px;
+  }
+  .signup__container--form .button {
+    cursor: pointer;
+  }
+  .input:hover {
+    border-bottom: 2px dashed rgb(2, 0, 0);
+  }
+  .signup__container--log a:hover {
+    text-decoration: underline;
+  }
+
+  footer nav {
+    width: initial;
+    margin: 0;
+    justify-content: left;
+  }
+  footer a {
+    padding-left: 30px;
+  }
+  footer a:hover {
+    text-decoration:underline;
+  }
