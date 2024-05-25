@@ -1,0 +1,172 @@
+html {
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #D00000 100%);
+  }
+  body a:hover {
+    font-weight: bolder;
+    transition: all 1s ease;
+    color: var(--softRed-variation);
+  }
+  
+  
+  /* Header */
+  header {
+    display: flex;
+    width: inherit;
+    height: 15vh;
+    justify-content: center;
+  }
+  header img {
+    height: 13vh;
+  }
+  header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: var(--title-h3);
+    color: var(--red-variation);
+  }
+  header a:hover {
+    opacity: .8;
+  }
+  
+  
+  
+  /* Main */
+  main {
+    width: inherit;
+    height: 85vh;
+  }
+  .login__container {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    padding: 0 20px 30px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  .login__container .title {
+    font-family: var(--font2);
+    font-size: var(--title-h1);
+    margin: 0 0 30px;
+  }
+  .login__container--form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .login__container--form .input {
+    height: 50px;
+    margin: 0 0 10px;
+    padding: 0 10px;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    font-size: var(--title-h6);
+    color: white;
+  }
+  .input:hover::placeholder {
+    color: var(--softRed-variation);
+  }
+  .input:hover {
+    transition: all 1s ease;
+    color: var(--red-variation);
+    border-bottom: 2px solid var(--softRed-variation);
+  }
+  ::placeholder {
+    color: white;
+  }
+  .login__container--form .button {
+    /* Estilos para botón */
+    /* font-family: 'Mulish', sans-serif;
+    height: 40px;
+    margin: 10px auto 0;
+    padding: 0 35px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(255, 255, 255, .3);
+    font-size: var(--title-h6);
+    font-weight: bold;
+    color: white; */
+  
+    /* Estilos para ancla */
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    height: 40px;
+    margin: 10px auto 0;
+    padding: 0 35px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    border: none;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, .2);
+    font-size: var(--title-h6);
+    font-weight: bold;
+    color: white;
+  }
+  .button:hover {
+    transition: all 2s ease;
+    background-color: rgba(242, 106, 79, .4);
+  }
+  .login__container--remember-me {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 25px;
+    font-size: var(--paragraphs);
+  }
+  .login__container--remember-me label {
+    margin-left: 5px;
+  }
+  .login__container--remember-me a {
+    margin-left: auto;
+    text-decoration: none;
+    font-size: var(--title-h6);
+    font-weight: bold;
+    color: white;
+  }
+  
+  .login__container--social-media {
+    display: flex;
+    height: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .login__container--social-media > a > svg {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+  }
+  .login__container--social-media > a {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    text-decoration: none;
+    font-size: var(--title-h6);
+    color: white;
+  }
+  
+  .login__container--register {
+    display: flex;
+    align-items: center;
+    font-size: var(--paragraphs);
+  }
+  .login__container--register a {
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: var(--title-h6);
+    font-weight: bold;
+    color: white;
+  }

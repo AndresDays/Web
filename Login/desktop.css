@@ -1,0 +1,35 @@
+html, body {
+    min-height: 100vh;
+  }
+  
+  main {
+    padding: 20px 0 0;
+  }
+  
+  .login__container {
+    min-width: 400px;
+    max-width: 35%;
+    padding: 50px 60px 70px;
+  }
+  .login__container--form .button {
+    width: 90%;
+    cursor: pointer;
+  }
+  .input:hover {
+    border-bottom: 2px dashed var(--softRed-variation);
+  }
+  .login__container--remember-me a:hover {
+    text-decoration: underline;
+  }
+  .login__container--social-media {
+    align-self: flex-start;
+  }
+  .login__container--social-media > a {
+    font-size: 16rem;
+  }
+  .login__container--social-media > a:hover {
+    text-decoration: underline;
+  }
+  .login__container--register > a:hover {
+    text-decoration: underline;
+  }
